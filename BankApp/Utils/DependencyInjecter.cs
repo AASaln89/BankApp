@@ -1,12 +1,10 @@
 ﻿using BankApp.Repository.Interfaces;
 using BankApp.Repository.PostgreSQL;
-using BankApp.Services;
 using BankApp.Services.Interfaces;
 using BankApp.Services.ServiceImplementation;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Newtonsoft.Json.Linq;
-using System;
 using BankService = BankApp.Services.ServiceImplementation.BankService;
 
 namespace BankApp.Utils
@@ -21,7 +19,7 @@ namespace BankApp.Utils
 
             string fileConfig = File.ReadAllText("config.json");
 
-            var jObject = JObject.Parse(fileConfig);
+            JObject jObject = JObject.Parse(fileConfig);
 
             string connectionString = jObject["ConnectionStrings"]["PostgreSQL"].Value<string>();
 

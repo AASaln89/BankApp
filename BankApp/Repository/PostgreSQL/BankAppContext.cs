@@ -11,7 +11,10 @@ namespace BankApp.Repository.PostgreSQL
 {
     public class BankAppContext : DbContext
     {
-        public BankAppContext(DbContextOptions<BankAppContext> options) : base(options) { }
+        public BankAppContext(DbContextOptions<BankAppContext> options) : base(options) 
+        { 
+            Database.EnsureCreated();
+        }
 
         public DbSet<Client> Clients { get; set; }
 

@@ -32,7 +32,6 @@ namespace BankApp.Repository.PostgreSQL
 
         public Bank Update(Bank entity)
         {
-            
             return _context.Update(entity).Entity;
         }
     }
