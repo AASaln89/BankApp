@@ -11,4 +11,3 @@ Client client = new Client() {Bank = bank, FirstName = "Client1", LastName = "Cl
 IClientService clientService = DependencyInjecter.GetService<IClientService>();
 clientService.Add(client);
 
-Console.WriteLine("Hello, World!");
