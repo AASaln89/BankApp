@@ -5,7 +5,6 @@ using BankApp.Services.ServiceImplementation;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Newtonsoft.Json.Linq;
-using BankService = BankApp.Services.ServiceImplementation.BankService;
 
 namespace BankApp.Utils
 {

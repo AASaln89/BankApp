@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace BankApp.Services.Interfaces
+﻿namespace BankApp.Services.Interfaces
 {
     public interface IClientService : IService<Client>
     {
