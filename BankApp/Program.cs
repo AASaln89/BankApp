@@ -3,7 +3,6 @@ using BankApp.Entities;
 using BankApp.Services.Interfaces;
 using BankApp.Utils;
 
-
 Bank bank = new Bank() { Name = "Bank1" };
 IBankService bankService = DependencyInjecter.GetService<IBankService>();
 bankService.Add(bank);
@@ -11,5 +10,3 @@ Client client = new Client() {Bank = bank, FirstName = "Client1", LastName = "Cl
 
 IClientService clientService = DependencyInjecter.GetService<IClientService>();
 clientService.Add(client);
-
-
